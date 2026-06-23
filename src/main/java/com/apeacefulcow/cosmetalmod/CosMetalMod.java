@@ -56,6 +56,28 @@ public class CosMetalMod {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EXAMPLE_BLOCK);
         }
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ALUMINUM_INGOT.get());
+            event.accept(ModItems.BENDALLOY_INGOT.get());
+            event.accept(ModItems.BISMUTH_INGOT.get());
+            event.accept(ModItems.BRASS_INGOT.get());
+            event.accept(ModItems.BRONZE_INGOT.get());
+            event.accept(ModItems.CADMIUM_INGOT.get());
+            event.accept(ModItems.CHROMIUM_INGOT.get());
+            event.accept(ModItems.COPPER_INGOT.get());
+            event.accept(ModItems.DURALUMIN_INGOT.get());
+            event.accept(ModItems.ELECTRUM_INGOT.get());
+            event.accept(ModItems.GOLD_INGOT.get());
+            event.accept(ModItems.IRON_INGOT.get());
+            event.accept(ModItems.LEAD_INGOT.get());
+            event.accept(ModItems.NICKEL_INGOT.get());
+            event.accept(ModItems.NICROSIL_INGOT.get());
+            event.accept(ModItems.PEWTER_INGOT.get());
+            event.accept(ModItems.SILVER_INGOT.get());
+            event.accept(ModItems.STEEL_INGOT.get());
+            event.accept(ModItems.TIN_INGOT.get());
+            event.accept(ModItems.ZINC_INGOT.get());
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
