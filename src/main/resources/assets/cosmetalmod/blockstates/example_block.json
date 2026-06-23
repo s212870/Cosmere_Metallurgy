@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "": {
+            "model": "cosmetalmod:block/example_block" }
+    }
+}

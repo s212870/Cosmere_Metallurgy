@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "up": "cosmetalmod:block/example_block"
+    }
+}
