@@ -1,8 +1,13 @@
 package com.apeacefulcow.cosmetalmod;
 
-import com.apeacefulcow.cosmetalmod.item.ModItems;
+import org.slf4j.Logger;
+
 import com.apeacefulcow.cosmetalmod.block.ModBlocks;
+import com.apeacefulcow.cosmetalmod.item.ModItems;
+import com.apeacefulcow.cosmetalmod.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
+
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,8 +20,6 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraft.world.item.CreativeModeTabs;
-import org.slf4j.Logger;
 
 // Very important Comment
 // The value here should match an entry in the META-INF/mods.toml file
@@ -32,6 +35,8 @@ public class CosMetalMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
         
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -48,16 +53,8 @@ public class CosMetalMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModItems.EXAMPLE_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EXAMPLE_BLOCK);
-            event.accept(ModBlocks.ZINC_SULFIDE);
-        }
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RAW_SILVER);
-        }
-        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.CHISEL);
         }
     }
 

@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "cosmetalmod:item/raw_silver"
+        "layer0": "cosmetalmod:item/lead_ingot"
     }
 }

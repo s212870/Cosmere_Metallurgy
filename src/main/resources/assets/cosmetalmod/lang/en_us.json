@@ -1,7 +1,23 @@
 {
     "block.cosmetalmod.example_block": "Example Block",
     "block.cosmetalmod.zinc_sulfide": "Zinc Sulfide",
-    "item.cosmetalmod.example_item": "Example Item",
-    "item.cosmetalmod.raw_silver": "Raw Silver",
-    "item.cosmetalmod.chisel": "Chisel"
+    "item.cosmetalmod.aluminum_ingot": "Aluminum Ingot",
+    "item.cosmetalmod.bendalloy_ingot": "Bendalloy Ingot",
+    "item.cosmetalmod.bismuth_ingot": "Bismuth Ingot",
+    "item.cosmetalmod.cadmium_ingot": "Cadmium Ingot",
+    "item.cosmetalmod.chromium_ingot": "Chromium Ingot",
+    "item.cosmetalmod.copper_ingot": "Copper Ingot",
+    "item.cosmetalmod.duralumin_ingot": "Duralumin Ingot",
+    "item.cosmetalmod.electrum_ingot": "Electrum Ingot",
+    "item.cosmetalmod.gold_ingot": "Gold Ingot",
+    "item.cosmetalmod.iron_ingot": "Iron Ingot",
+    "item.cosmetalmod.lead_ingot": "Lead Ingot",
+    "item.cosmetalmod.nickel_ingot": "Nickel Ingot",
+    "item.cosmetalmod.nicrosil_ingot": "Nicrosil Ingot",
+    "item.cosmetalmod.pewter_ingot": "Pewter Ingot",
+    "item.cosmetalmod.silver_ingot": "Silver Ingot",
+    "item.cosmetalmod.steel_ingot": "Steel Ingot",
+    "item.cosmetalmod.tin_ingot": "Tin Ingot",
+    "item.cosmetalmod.zinc_ingot": "Zinc Ingot",
+    "creative.cosmetalmod.cosmetalmod_tab": "CosMetal Mod"
 }
